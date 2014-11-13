@@ -15,3 +15,7 @@ func main() {
 		fmt.Fprintf(os.Stderr, "reading standard input", err)
 	}
 }
+
+func unxhtmlify_line(s string) string {
+	return s
+}
