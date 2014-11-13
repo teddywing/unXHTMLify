@@ -4,6 +4,7 @@ import (
 	"bufio"
 	"fmt"
 	"os"
+	"strings"
 )
 
 func main() {
@@ -17,5 +18,5 @@ func main() {
 }
 
 func unxhtmlify_line(s string) string {
-	return s
+	return strings.Replace(s, " /", "", 1)
 }
