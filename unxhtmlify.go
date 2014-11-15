@@ -4,7 +4,7 @@ import (
 	"bufio"
 	"fmt"
 	"os"
-	"strings"
+	"regexp"
 )
 
 func main() {
@@ -18,5 +18,6 @@ func main() {
 }
 
 func unxhtmlify_line(s string) string {
-	return strings.Replace(s, " /", "", 1)
+	re := regexp.MustCompile(" ?/>")
+	return re.ReplaceAllString(s, ">")
 }
