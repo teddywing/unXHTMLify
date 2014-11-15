@@ -14,5 +14,18 @@ Currently the implementation is very simplistic and liberal. Any `/>` will get r
 Takes input from STDIN and outputs to STDOUT.
 
 
+## Installing
+
+	$ go get github.com/teddywing/unXHTMLify
+	$ cd $GOPATH/src/github.com/teddywing/unXHTMLify
+	$ go install
+
+
+## Running
+Pipe an HTML file into `unXHTMLify` to convert the file:
+
+	$ cat sample.html | unXHTMLify > sample-converted.html
+
+
 ## License
 Licensed under the MIT license. See the included LICENSE file.
