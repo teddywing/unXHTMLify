@@ -11,6 +11,8 @@ becomes
 
 Currently the implementation is very simplistic and liberal. Any `/>` will get replaced to remove the slash.
 
+Takes input from STDIN and outputs to STDOUT.
+
 
 ## License
 Licensed under the MIT license. See the included LICENSE file.
