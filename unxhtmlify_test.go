@@ -2,7 +2,7 @@ package main
 
 import "testing"
 
-func TestUnxhtmlifyLine(t *testing.T) {
+func TestUnxhtmlifyString(t *testing.T) {
 	var tests = []struct {
 		input, expected string
 	}{

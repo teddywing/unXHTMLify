@@ -17,7 +17,7 @@ func main() {
 	}
 }
 
-func unxhtmlify_line(s string) string {
+func unxhtmlify_string(s string) string {
 	re := regexp.MustCompile(" ?/>")
 	return re.ReplaceAllString(s, ">")
 }
