@@ -9,6 +9,9 @@ func TestUnxhtmlifyLine(t *testing.T) {
 		{ "<br />", "<br>" },
 		{ "<span>Bender / Flexo</span>", "<span>Bender / Flexo</span>" },
 		{ "<img src=\"farnsworth-paradox.jpg\" alt=\"Parabox\"/>", "<img src=\"farnsworth-paradox.jpg\" alt=\"Parabox\">" },
+		{ "some-class-name\" />", "some-class-name\">" },
+		{ "/>", ">" },
+		{ "		/>", "		>" },
 	}
 	
 	for _, c := range tests {
